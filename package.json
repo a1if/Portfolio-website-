@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-website",
+  "version": "1.1.0",
+  "description": "AI-focused portfolio site with a lightweight Node.js backend for contact submissions.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "NODE_ENV=development node server/server.js",
+    "format": "npx prettier --write index.html script.js styles.css README.md \"projects/**/*.html\" \"server/**/*.js\" package.json",
+    "format:check": "npx prettier --check index.html script.js styles.css README.md \"projects/**/*.html\" \"server/**/*.js\" package.json",
+    "test": "node --eval \"console.log('No automated tests configured yet.')\""
+  },
+  "keywords": [
+    "portfolio",
+    "machine-learning",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs"
+}
