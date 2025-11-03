@@ -141,6 +141,17 @@ if (contactForm && contactSubmitButton && contactFeedback) {
       );
       contactForm.reset();
     } catch (error) {
+      if (isStaticPagesHost) {
+        setFeedback(
+          "The live preview is running on static hosting, so the contact form is disabled. Please reach out via email or LinkedIn.",
+          "error",
+        );
+      } else {
+        setFeedback(
+          "Network error — please check your connection and try again.",
+          "error",
+        );
+      }
       setFeedback(
         "Network error — please check your connection and try again.",
         "error",

@@ -39,6 +39,16 @@ Update the content in `index.html` to reflect your personal details, projects, a
 
 3. Contact submissions are written to `server/data/contacts.json` (created automatically on first run and ignored by Git). Check this file to review incoming messages.
 
+## Deploying to GitHub Pages
+
+The repository includes a GitHub Actions workflow that ships the front-end to GitHub Pages whenever you push to `main`. Because GitHub Pages only serves static assets, the contact form gracefully explains that submissions are disabled on that environment. To keep the backend available, host the `server` directory separately (Render, Railway, Fly.io, etc.) and update the form action URL.
+
+1. Commit the `.github/workflows/deploy.yml` file and push the repository to GitHub.
+2. Open your repository on GitHub and head to **Settings → Pages**.
+3. Under **Build and deployment**, select **GitHub Actions** as the source. The "Deploy to GitHub Pages" workflow appears automatically after the first push.
+4. Push to `main` or trigger the workflow manually from the **Actions** tab. The workflow installs dependencies, runs tests, and uploads the static `dist` bundle.
+5. When the workflow finishes, the live URL is shown on the run summary and within **Settings → Pages**.
+
 ## API endpoints
 
 - `POST /api/contact` &mdash; Accepts `{ name, email, message }` and stores the submission.
