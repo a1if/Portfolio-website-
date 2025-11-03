@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for Alex Morgan, a machine learning engineer showcasing AI projects, research, and production experience."
+    />
+    <title>Alex Morgan | Machine Learning Engineer & Applied Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="logo">AM</div>
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="sr-only">Toggle dark mode</span>
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path
+            d="M12 3.1a.9.9 0 0 1 .9.9v2a.9.9 0 1 1-1.8 0V4a.9.9 0 0 1 .9-.9Zm0 12.5a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Zm8.9-3.6a.9.9 0 0 1-.9.9h-2a.9.9 0 1 1 0-1.8h2a.9.9 0 0 1 .9.9Zm-14.9 0a.9.9 0 0 1-.9.9H3a.9.9 0 1 1 0-1.8h2a.9.9 0 0 1 .9.9Zm11.8 6.7a.9.9 0 0 1-1.3 1.3l-1.4-1.4a.9.9 0 0 1 1.3-1.3l1.4 1.4ZM7.9 7.9A.9.9 0 0 1 6.6 6.6L5.2 5.2A.9.9 0 0 1 6.5 3.9l1.4 1.4a.9.9 0 0 1 0 1.3Zm8.2 0a.9.9 0 0 1 0-1.3l1.4-1.4a.9.9 0 0 1 1.3 1.3L17.4 7.9a.9.9 0 0 1-1.3 0Zm-8.2 8.2a.9.9 0 0 1 0 1.3l-1.4 1.4A.9.9 0 0 1 5.2 16.5l1.4-1.4a.9.9 0 0 1 1.3 0Z"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero__content">
+          <p class="eyebrow">Machine Learning Engineer & Applied Scientist</p>
+          <h1 id="hero-heading">Hi, I&rsquo;m Alex Morgan.</h1>
+          <p>
+            I build production-ready AI systems that convert research
+            breakthroughs into measurable business impact. From rapid
+            experimentation to deploying resilient ML pipelines, I specialize in
+            taking machine learning products from prototype to scale.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="#projects">Explore AI projects</a>
+            <a class="button button--ghost" href="#contact">Schedule a chat</a>
+          </div>
+        </div>
+        <div class="hero__image" role="presentation">
+          <img
+            src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=600&q=80"
+            alt="Alex Morgan working with data visualizations"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-heading">
+        <div class="section__header">
+          <h2 id="about-heading">About</h2>
+          <p>Engineering trustworthy AI from data exploration to deployment.</p>
+        </div>
+        <div class="about-grid">
+          <p>
+            Over the past seven years, I&rsquo;ve shipped machine learning
+            products across healthcare, fintech, and SaaS. I partner with
+            product, research, and engineering teams to define use cases, design
+            experiment roadmaps, and deliver models that improve key metrics in
+            production.
+          </p>
+          <p>
+            I care deeply about responsible AI practices, reproducible research,
+            and creating systems users can trust. Outside of work, I mentor new
+            data scientists, speak at ML meetups, and contribute to open-source
+            tooling for monitoring and interpretability.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="section"
+        aria-labelledby="experience-heading"
+      >
+        <div class="section__header">
+          <h2 id="experience-heading">Experience</h2>
+          <p>Impactful roles building intelligent products.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <h3>Senior Machine Learning Engineer · Nova Labs</h3>
+            <span class="timeline__date">2021 &ndash; Present</span>
+            <p>
+              Leading the AI platform team powering Nova&rsquo;s predictive
+              analytics suite. Delivered a feature store and automated model
+              retraining that cut inference drift incidents by 63% and increased
+              expansion revenue by 18%.
+            </p>
+          </article>
+          <article class="timeline__item">
+            <h3>Applied Scientist · Northwind AI</h3>
+            <span class="timeline__date">2018 &ndash; 2021</span>
+            <p>
+              Built NLP models for conversational banking, reducing call-center
+              load by 42%. Led experimentation pipelines with MLflow and
+              Kubernetes that shortened research-to-prod cycles from weeks to
+              days.
+            </p>
+          </article>
+          <article class="timeline__item">
+            <h3>Data Scientist · Freelance</h3>
+            <span class="timeline__date">2015 &ndash; 2018</span>
+            <p>
+              Partnered with startups to discover high-value data opportunities,
+              deliver demand forecasting models, and operationalize dashboards
+              used by executives and GTM teams.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="section__header">
+          <h2 id="projects-heading">Highlighted Projects</h2>
+          <p>
+            Selected machine learning systems delivering measurable outcomes.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?auto=format&fit=crop&w=700&q=80"
+              alt="Engineer monitoring machine learning experiments"
+            />
+            <div class="card__body">
+              <h3>Nova Predictive Maintenance</h3>
+              <p>
+                Developed anomaly detection models using graph neural networks
+                and streaming telemetry to forecast equipment failures 14 days
+                in advance, saving $4.5M annually in downtime.
+              </p>
+              <a class="link" href="projects/nova-predictive-maintenance.html">
+                View case study
+              </a>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580894894513-541e068a3e2e?auto=format&fit=crop&w=700&q=80"
+              alt="Voice assistant illustration"
+            />
+            <div class="card__body">
+              <h3>Northwind Conversational AI</h3>
+              <p>
+                Shipped a multilingual virtual banker fine-tuned from LLMs with
+                RLHF, increasing self-service resolution by 56% while
+                maintaining 94% CSAT.
+              </p>
+              <a class="link" href="projects/northwind-conversational-ai.html">
+                View case study
+              </a>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=700&q=80"
+              alt="Team analyzing data ethics framework"
+            />
+            <div class="card__body">
+              <h3>Responsible AI Toolkit</h3>
+              <p>
+                Built governance workflows with fairness dashboards, bias stress
+                tests, and model cards that enabled regulated clients to deploy
+                compliant AI services globally.
+              </p>
+              <a class="link" href="projects/responsible-ai-toolkit.html">
+                View case study
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-heading">
+        <div class="section__header">
+          <h2 id="skills-heading">Skills &amp; Tools</h2>
+          <p>
+            Delivering AI products with scientific rigor and operational
+            excellence.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div>
+            <h3>Machine Learning</h3>
+            <ul>
+              <li>Deep learning · PyTorch · TensorFlow</li>
+              <li>LLMs, NLP, and recommender systems</li>
+              <li>Time-series &amp; anomaly detection</li>
+              <li>Experiment design &amp; causal inference</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Data &amp; Analytics</h3>
+            <ul>
+              <li>Feature engineering &amp; data quality</li>
+              <li>SQL, dbt, Spark, Snowflake</li>
+              <li>Streaming pipelines (Kafka, Flink)</li>
+              <li>Visualization with Python &amp; BI tools</li>
+            </ul>
+          </div>
+          <div>
+            <h3>MLOps &amp; Delivery</h3>
+            <ul>
+              <li>Model deployment (Kubernetes, SageMaker)</li>
+              <li>Monitoring, drift detection, and CI/CD</li>
+              <li>Responsible AI, fairness, governance</li>
+              <li>Cross-functional leadership &amp; storytelling</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="testimonials"
+        class="section"
+        aria-labelledby="testimonials-heading"
+      >
+        <div class="section__header">
+          <h2 id="testimonials-heading">Testimonials</h2>
+          <p>Partners on the impact of AI initiatives.</p>
+        </div>
+        <div class="testimonial-slider" aria-live="polite">
+          <figure class="testimonial current">
+            <blockquote>
+              “Alex operationalized our ML roadmap, taking us from notebooks to
+              automated pipelines in under a quarter. We now predict churn with
+              88% accuracy and saved millions in retention.”
+            </blockquote>
+            <figcaption>Jordan Lee · VP Product, Nova Labs</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>
+              “Their rigor with evaluation and safety reviews gave us confidence
+              to launch our conversational AI to regulated markets. Alex
+              anticipates both technical and ethical edge cases.”
+            </blockquote>
+            <figcaption>
+              Priya Shah · Director of Engineering, Northwind
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>
+              “Alex coached our data team on monitoring and observability,
+              catching bias issues before customers did. Their guidance is the
+              reason we ship responsible AI today.”
+            </blockquote>
+            <figcaption>Casey Nguyen · Founder, Atlas Health</figcaption>
+          </figure>
+        </div>
+        <div
+          class="slider-controls"
+          role="group"
+          aria-label="Testimonials controls"
+        >
+          <button
+            class="slider-button slider-button--prev"
+            aria-label="Previous testimonial"
+          >
+            Prev
+          </button>
+          <button
+            class="slider-button slider-button--next"
+            aria-label="Next testimonial"
+          >
+            Next
+          </button>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-heading">
+        <div class="section__header">
+          <h2 id="contact-heading">Let&rsquo;s build intelligent products</h2>
+          <p>
+            Share your AI challenge and I&rsquo;ll respond within two business
+            days.
+          </p>
+        </div>
+        <form class="contact-form" action="/api/contact" method="POST">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jane Doe"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div class="form-field form-field--full">
+            <label for="message">How can I help?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Project details, timeline, or goals"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="button">Send message</button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="logo" href="#top">AM</a>
+        <p>
+          © <span id="current-year"></span> Alex Morgan. All rights reserved.
+        </p>
+      </div>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.kaggle.com" target="_blank" rel="noopener"
+            >Kaggle</a
+          >
+        </li>
+        <li>
+          <a href="https://medium.com" target="_blank" rel="noopener">Medium</a>
+        </li>
+      </ul>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+        <path
+          d="M12 5.5a1 1 0 0 1 .78.37l5 6a1 1 0 0 1-1.56 1.26L12 7.83 7.78 13.13a1 1 0 1 1-1.56-1.26l5-6a1 1 0 0 1 .78-.37Z"
+        />
+        <path
+          d="M12 10.5a1 1 0 0 1 .78.37l5 6a1 1 0 0 1-1.56 1.26L12 12.83l-4.22 5.3a1 1 0 1 1-1.56-1.26l5-6a1 1 0 0 1 .78-.37Z"
+        />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

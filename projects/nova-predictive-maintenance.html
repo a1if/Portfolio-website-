@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case study describing how Alex Morgan delivered Nova Labs' predictive maintenance platform with graph neural networks and streaming telemetry."
+    />
+    <title>Nova Predictive Maintenance Case Study | Alex Morgan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="logo" href="../index.html">AM</a>
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation">
+        <ul>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#experience">Experience</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="sr-only">Toggle dark mode</span>
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path
+            d="M12 3.1a.9.9 0 0 1 .9.9v2a.9.9 0 1 1-1.8 0V4a.9.9 0 0 1 .9-.9Zm0 12.5a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Zm8.9-3.6a.9.9 0 0 1-.9.9h-2a.9.9 0 1 1 0-1.8h2a.9.9 0 0 1 .9.9Zm-14.9 0a.9.9 0 0 1-.9.9H3a.9.9 0 1 1 0-1.8h2a.9.9 0 0 1 .9.9Zm11.8 6.7a.9.9 0 0 1-1.3 1.3l-1.4-1.4a.9.9 0 0 1 1.3-1.3l1.4 1.4ZM7.9 7.9A.9.9 0 0 1 6.6 6.6L5.2 5.2A.9.9 0 0 1 6.5 3.9l1.4 1.4a.9.9 0 0 1 0 1.3Zm8.2 0a.9.9 0 0 1 0-1.3l1.4-1.4a.9.9 0 0 1 1.3 1.3L17.4 7.9a.9.9 0 0 1-1.3 0Zm-8.2 8.2a.9.9 0 0 1 0 1.3l-1.4 1.4A.9.9 0 0 1 5.2 16.5l1.4-1.4a.9.9 0 0 1 1.3 0Z"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section
+        class="section case-study-hero"
+        aria-labelledby="case-study-heading"
+      >
+        <div class="case-study-hero__intro">
+          <p class="eyebrow">Case Study · Predictive Maintenance</p>
+          <h1 id="case-study-heading">Nova Predictive Maintenance</h1>
+          <p>
+            Delivering always-on reliability analytics for Nova Labs' industrial
+            IoT fleet. I led the end-to-end ML platform workstream that paired
+            graph neural networks with streaming telemetry to surface imminent
+            equipment failures two weeks in advance.
+          </p>
+        </div>
+        <dl class="case-study-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>Lead Machine Learning Engineer</dd>
+          </div>
+          <div>
+            <dt>Timeline</dt>
+            <dd>10 months · 2022</dd>
+          </div>
+          <div>
+            <dt>Impact</dt>
+            <dd>$4.5M annual downtime savings</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section case-study-section" aria-labelledby="objectives">
+        <div class="section__header">
+          <h2 id="objectives">Objectives &amp; outcomes</h2>
+          <p>Modernize Nova's maintenance playbook with trustworthy AI.</p>
+        </div>
+        <div class="case-study-columns">
+          <div>
+            <h3>Business goals</h3>
+            <ul>
+              <li>Reduce unplanned downtime across a 3,000 asset fleet.</li>
+              <li>
+                Provide plant operators with actionable maintenance windows.
+              </li>
+              <li>Standardize reporting for leadership across geographies.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Results</h3>
+            <ul>
+              <li>
+                Forecasted 87% of critical failures at least 14 days early.
+              </li>
+              <li>Improved technician scheduling efficiency by 22%.</li>
+              <li>
+                Enabled finance to project parts inventory with 95% accuracy.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section case-study-section"
+        aria-labelledby="architecture"
+      >
+        <div class="section__header">
+          <h2 id="architecture">Technical architecture</h2>
+          <p>
+            Robust, observable infrastructure supporting rapid iteration and
+            low-latency inference.
+          </p>
+        </div>
+        <div class="case-study-columns">
+          <div>
+            <h3>Data &amp; modeling</h3>
+            <ul>
+              <li>
+                Designed a feature store ingesting 40M sensor readings daily
+                through Kafka and dbt.
+              </li>
+              <li>
+                Built graph neural networks capturing equipment dependencies and
+                learned temporal attention weights.
+              </li>
+              <li>
+                Automated hyper-parameter sweeps with MLflow and Ray Tune,
+                cutting experimentation time by 35%.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Operations</h3>
+            <ul>
+              <li>
+                Containerized inference services on Kubernetes with autoscaling
+                tuned for bursty telemetry loads.
+              </li>
+              <li>
+                Implemented drift monitoring, canary deployments, and rollback
+                playbooks with Prometheus and Argo Rollouts.
+              </li>
+              <li>
+                Delivered Grafana dashboards surfacing confidence intervals and
+                recommended maintenance actions per facility.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-study-section" aria-labelledby="role">
+        <div class="section__header">
+          <h2 id="role">What I owned</h2>
+          <p>
+            Leadership spanning product discovery through production launch.
+          </p>
+        </div>
+        <div class="case-study-columns">
+          <div>
+            <h3>Discovery</h3>
+            <ul>
+              <li>
+                Conducted ride-alongs with maintenance crews to map workflows.
+              </li>
+              <li>
+                Co-created leading indicators and economic impact models with
+                operations finance.
+              </li>
+              <li>
+                Facilitated risk reviews focused on model transparency and user
+                trust.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Delivery</h3>
+            <ul>
+              <li>
+                Mentored a cross-functional squad of 6 engineers and 2 analysts.
+              </li>
+              <li>
+                Shipped the production stack, observability, and on-call
+                runbooks.
+              </li>
+              <li>
+                Presented results to the board, securing budget for expansion to
+                additional plants.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-study-quote" aria-label="Client quote">
+        <figure>
+          <blockquote>
+            “Alex operationalized predictive maintenance faster than any vendor
+            we evaluated. Their partnership bridged the gap between data science
+            and the factory floor.”
+          </blockquote>
+          <figcaption>Jordan Lee · VP Product, Nova Labs</figcaption>
+        </figure>
+      </section>
+
+      <section class="section case-study-cta" aria-labelledby="cta-heading">
+        <div class="case-study-cta__content">
+          <h2 id="cta-heading">Have a reliability challenge?</h2>
+          <p>
+            Let&rsquo;s discuss how intelligent monitoring can unlock new uptime
+            and efficiency gains for your organization.
+          </p>
+          <a class="button" href="../index.html#contact"
+            >Book a strategy call</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="logo" href="#top">AM</a>
+        <p>
+          © <span id="current-year"></span> Alex Morgan. All rights reserved.
+        </p>
+      </div>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:hello@example.com">Email</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="../script.js" defer></script>
+  </body>
+</html>

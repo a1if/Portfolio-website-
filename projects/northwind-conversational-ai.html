@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Case study covering how Alex Morgan delivered Northwind's multilingual conversational AI assistant with LLM fine-tuning and RLHF."
+    />
+    <title>Northwind Conversational AI Case Study | Alex Morgan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="logo" href="../index.html">AM</a>
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="primary-navigation">
+        <ul>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#experience">Experience</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="sr-only">Toggle dark mode</span>
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+          <path
+            d="M12 3.1a.9.9 0 0 1 .9.9v2a.9.9 0 1 1-1.8 0V4a.9.9 0 0 1 .9-.9Zm0 12.5a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Zm8.9-3.6a.9.9 0 0 1-.9.9h-2a.9.9 0 1 1 0-1.8h2a.9.9 0 0 1 .9.9Zm-14.9 0a.9.9 0 0 1-.9.9H3a.9.9 0 1 1 0-1.8h2a.9.9 0 0 1 .9.9Zm11.8 6.7a.9.9 0 0 1-1.3 1.3l-1.4-1.4a.9.9 0 0 1 1.3-1.3l1.4 1.4ZM7.9 7.9A.9.9 0 0 1 6.6 6.6L5.2 5.2A.9.9 0 0 1 6.5 3.9l1.4 1.4a.9.9 0 0 1 0 1.3Zm8.2 0a.9.9 0 0 1 0-1.3l1.4-1.4a.9.9 0 0 1 1.3 1.3L17.4 7.9a.9.9 0 0 1-1.3 0Zm-8.2 8.2a.9.9 0 0 1 0 1.3l-1.4 1.4A.9.9 0 0 1 5.2 16.5l1.4-1.4a.9.9 0 0 1 1.3 0Z"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section
+        class="section case-study-hero"
+        aria-labelledby="case-study-heading"
+      >
+        <div class="case-study-hero__intro">
+          <p class="eyebrow">Case Study · Conversational AI</p>
+          <h1 id="case-study-heading">Northwind Conversational AI</h1>
+          <p>
+            Launching a multilingual virtual banker trusted by regulated
+            markets. I steered LLM adaptation, safety review, and performance
+            analytics to deliver empathetic service across 5 languages while
+            protecting user privacy.
+          </p>
+        </div>
+        <dl class="case-study-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>Applied Scientist</dd>
+          </div>
+          <div>
+            <dt>Timeline</dt>
+            <dd>8 months · 2021</dd>
+          </div>
+          <div>
+            <dt>Impact</dt>
+            <dd>56% increase in self-service resolution</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section
+        class="section case-study-section"
+        aria-labelledby="northwind-goals"
+      >
+        <div class="section__header">
+          <h2 id="northwind-goals">Goals &amp; success criteria</h2>
+          <p>Elevate digital support without compromising compliance.</p>
+        </div>
+        <div class="case-study-columns">
+          <div>
+            <h3>Customer goals</h3>
+            <ul>
+              <li>Automate tier-one banking inquiries across channels.</li>
+              <li>Maintain a consistent tone aligned with brand voice.</li>
+              <li>
+                Meet regulatory obligations for data retention and audit logs.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Measured outcomes</h3>
+            <ul>
+              <li>Achieved 94% post-interaction CSAT across cohorts.</li>
+              <li>Reduced contact center volume by 42% within two quarters.</li>
+              <li>
+                Cleared security, privacy, and bias assessments with zero major
+                findings.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section case-study-section"
+        aria-labelledby="northwind-approach"
+      >
+        <div class="section__header">
+          <h2 id="northwind-approach">Solution approach</h2>
+          <p>Combining frontier models with rigorous guardrails.</p>
+        </div>
+        <div class="case-study-columns">
+          <div>
+            <h3>Modeling</h3>
+            <ul>
+              <li>
+                Fine-tuned encoder-decoder LLMs using a curated corpus of call
+                transcripts and intent taxonomies.
+              </li>
+              <li>
+                Implemented reinforcement learning from human feedback to align
+                tone and policy compliance.
+              </li>
+              <li>
+                Built domain adapters to switch financial terminology based on
+                locale and regulatory jurisdiction.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Safety &amp; compliance</h3>
+            <ul>
+              <li>
+                Developed toxicity, hallucination, and PII classifiers in the
+                moderation stack.
+              </li>
+              <li>
+                Delivered red-teaming playbooks with 200+ adversarial prompts
+                for quarterly testing.
+              </li>
+              <li>
+                Instrumented observability across latency, accuracy, and
+                fairness KPIs via Datadog dashboards.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section case-study-section"
+        aria-labelledby="northwind-leadership"
+      >
+        <div class="section__header">
+          <h2 id="northwind-leadership">Leadership highlights</h2>
+          <p>Shipping cross-functional workstreams with clarity.</p>
+        </div>
+        <div class="case-study-columns">
+          <div>
+            <h3>Partnership</h3>
+            <ul>
+              <li>
+                Partnered with design to script inclusive conversation flows and
+                accessibility cues.
+              </li>
+              <li>
+                Coached product marketing on communicating AI capabilities and
+                limitations honestly.
+              </li>
+              <li>
+                Coordinated with legal on explainability documentation for
+                regulators.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Enablement</h3>
+            <ul>
+              <li>
+                Built a labeling portal enabling 50 subject-matter experts to
+                contribute RLHF comparisons.
+              </li>
+              <li>
+                Ran enablement sessions for customer success teams covering AI
+                escalation workflows.
+              </li>
+              <li>
+                Established a weekly metrics review to triage drift, bias, and
+                data quality signals.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section case-study-quote" aria-label="Customer feedback">
+        <figure>
+          <blockquote>
+            “Northwind&rsquo;s assistant now resolves complex issues without
+            feeling robotic. Alex guided us through high-stakes governance with
+            confidence.”
+          </blockquote>
+          <figcaption>
+            Priya Shah · Director of Engineering, Northwind
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section case-study-cta" aria-labelledby="northwind-cta">
+        <div class="case-study-cta__content">
+          <h2 id="northwind-cta">Designing conversational AI?</h2>
+          <p>
+            I can help you translate brand voice into safe, multilingual LLM
+            experiences that customers love.
+          </p>
+          <a class="button" href="../index.html#contact"
+            >Start a discovery call</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="logo" href="#top">AM</a>
+        <p>
+          © <span id="current-year"></span> Alex Morgan. All rights reserved.
+        </p>
+      </div>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a href="mailto:hello@example.com">Email</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="../script.js" defer></script>
+  </body>
+</html>
