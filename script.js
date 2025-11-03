@@ -13,9 +13,6 @@ const contactForm = document.querySelector(".contact-form");
 const contactSubmitButton = contactForm?.querySelector("button[type='submit']");
 const contactFeedback = contactForm?.querySelector(".form-feedback");
 const storedTheme = localStorage.getItem("preferred-theme");
-const isStaticPagesHost = ["github.io", "githubusercontent.com"].some(
-  (domain) => window.location.hostname.endsWith(domain),
-);
 
 if (storedTheme) {
   root.setAttribute("data-theme", storedTheme);
@@ -155,6 +152,10 @@ if (contactForm && contactSubmitButton && contactFeedback) {
           "error",
         );
       }
+      setFeedback(
+        "Network error — please check your connection and try again.",
+        "error",
+      );
     } finally {
       contactSubmitButton.disabled = false;
       contactSubmitButton.textContent = originalButtonText;
